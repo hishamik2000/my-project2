@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    text-align: right;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin: 0;
+}
+
+.album-controls, .photo-controls {
+    text-align: center;
+    margin: 20px;
+}
+
+.photo-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#photosContainer {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.media-container {
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.media-container img, .media-container video {
+    max-width: 150px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.media-container p {
+    margin: 0 0 10px;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.album-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eee;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.album-item:hover {
+    background-color: #ddd;
+}
+
+.album-item button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.album-controls button, .photo-controls button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: white;
+}

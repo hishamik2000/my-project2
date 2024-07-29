@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تصنيف الصور الفوتوغرافية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>تصنيف الصور الفوتوغرافية</h1>
+    <div class="album-controls">
+        <button onclick="addAlbum()">إضافة ألبوم</button>
+        <button onclick="saveData()">حفظ البيانات</button>
+    </div>
+    <div id="albumList"></div>
+    <div class="photo-controls">
+        <select id="albumSelect">
+            <!-- الألبومات ستضاف هنا ديناميكيًا -->
+        </select>
+        <input type="file" id="photoInput" accept="image/*,video/*">
+        <input type="text" id="photoComment" placeholder="أضف تعليقًا">
+        <button onclick="savePhoto()">إضافة صورة</button>
+    </div>
+    <div id="photosContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
